@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamal | Computer Engineer & Web Developer</title>
+    <meta name="description"
+        content="Portfolio of Jamal, a Computer Engineer specializing in scalable web applications, system architecture, and modern UI/UX design.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="letter-j.png">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <!-- animation from other portfolio but  -->
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <!-- font style link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- EmailJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("kXf-rBKWnwWloAC5h");
+        })();
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container nav">
+            <a href="#home" class="logo"><img src="letter-j.png" alt=""> <span></span></a>
+
+            <nav>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <a href="MUHAMMADJAMALCV.pdf" download class="btn btn-primary cv-btn">
+                    <i class="fa-solid fa-download"></i> CV
+                </a>
+                <button class="nav-toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="MySection">
+        <section class="hero" id="home">
+            <!-- Background animated shapes -->
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+
+            <div class="container hero-content">
+                <div class="hero-text reveal reveal-left">
+
+                    <h1> <span>Muhammad Jamal</span><br><span class="stroke"
+                            style="color: transparent; -webkit-text-stroke: 2px black; font-family:'Franklin Gothic Medium';">Computer
+                            Engineer.</span></h1>
+                    <h3> I am <span class="text"> </span></h3>
+                    <p>I design and build efficient, scalable systems and responsive user experiences. Transforming
+                        complex problems into elegant, real-world solutions through code.</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary">Hire Me</a>
+                        <a href="#projects" class="btn btn-outline">View Work</a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrap reveal reveal-right">
+                    <div class="hero-image">
+                        <!-- Professional Tech Man Placeholder -->
+                        <!-- <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=1000&auto=format&fit=crop" alt="Jamal - Computer Engineer"> -->
+                        <img src="linkedin image new.jpeg" alt="Jamal - Computer Engineer">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">About <span style="color: #0647d4;">Me</span></h2>
+
+            <div class="about-content reveal">
+                <div class="about-img">
+                    <img src="profile.jpg" alt="Jamal - Computer Engineer">
+                </div>
+
+                <div class="about-text glass-panel" style="padding: 2.5rem;">
+                    <h3>Engineering the Future</h3>
+                    <p>I am Jamal, a dedicated Computer Engineer with a deep passion for building high-performance
+                        applications, robust backend architectures, and stunning frontend interfaces. My engineering
+                        background equips me to handle everything from low-level system design to high-level aesthetic
+                        UI development.</p>
+                    <p>When I'm not writing code or debugging complex systems, I'm exploring new technologies,
+                        contributing to open-source, or optimizing existing projects for maximum performance.</p>
+
+                    <div class="about-stats" style="margin-bottom: 2rem;">
+                        <div class="stat-item">
+                            <h4>5+</h4>
+                            <p>Months Expr.</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>45+</h4>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>01+</h4>
+                            <p>Clients</p>
+                        </div>
+                    </div>
+
+                    <a href="MUHAMMADJAMALCV.pdf" download class="btn btn-primary"
+                        style="display: flex; align-items: center; justify-content: center; width: fit-content; gap: 0.5rem; font-size: 1rem; padding: 0.8rem 1.5rem;">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">My <span style="color: #0647d4;">Skills</span></h2>
+
+            <div class="skills-grid reveal">
+                <!-- Skill 1 -->
+                <div class="skill-card glass-panel">
+                    <i class="fa-brands fa-html5 skill-icon"></i>
+                    <h4>HTML5 & CSS3</h4>
+                </div>
+                <!-- Skill 2 -->
+                <div class="skill-card glass-panel">
+                    <i class="fa-brands fa-js skill-icon"></i>
+                    <h4>JavaScript (ES6+)</h4>
+                </div>
+                <!-- Skill 3 -->
+                <div class="skill-card glass-panel">
+                    <i class="fa-brands fa-react skill-icon"></i>
+                    <h4>React.js</h4>
+                </div>
+                <!-- Skill 4 -->
+                <div class="skill-card glass-panel">
+                    <i class="fa-brands fa-node-js skill-icon"></i>
+                    <h4>Node.js</h4>
+                </div>
+                <!-- Skill 5 -->
+                <div class="skill-card glass-panel">
+                    <i class="fa-brands fa-python skill-icon"></i>
+                    <h4>Python</h4>
+                </div>
+                <!-- Skill 6 -->
+                <div class="skill-card glass-panel">
+                    <i class="fa-solid fa-database skill-icon"></i>
+                    <h4>SQL & NoSQL</h4>
+                </div>
+                <!-- Skill 7 -->
+                <div class="skill-card glass-panel">
+                    <i class="fa-brands fa-git-alt skill-icon"></i>
+                    <h4>Git & GitHub</h4>
+                </div>
+                <!-- Skill 8 -->
+                <div class="skill-card glass-panel">
+                    <i class="fa-solid fa-server skill-icon"></i>
+                    <h4>System Architecture</h4>
+                </div>
+                <!-- Skill 9 -->
+                <div class="skill-card glass-panel">
+                    <i class="fa-solid fa-palette skill-icon"></i>
+                    <h4>Photoshop</h4>
+                </div>
+                <!-- Skill 10 -->
+                <div class="skill-card glass-panel">
+                    <i class="fa-solid fa-pen-nib skill-icon"></i>
+                    <h4>Illustrator</h4>
+                </div>
+                <!-- Skill 11 -->
+                <div class="skill-card glass-panel">
+                    <i class="fa-solid fa-object-group skill-icon"></i>
+                    <h4>Canva</h4>
+                </div>
+                <!-- Skill 12 -->
+                <div class="skill-card glass-panel">
+                    <i class="fa-solid fa-chart-line skill-icon"></i>
+                    <h4>SEO</h4>
+                </div>
+                <!-- Skill 13 -->
+                <div class="skill-card glass-panel">
+                    <i class="fa-solid fa-layer-group skill-icon"></i>
+                    <h4>UI/UX Design</h4>
+                </div>
+                <!-- Skill 14 -->
+                <div class="skill-card glass-panel">
+                    <i class="fa-solid fa-file-code skill-icon"></i>
+                    <h4>C++</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2 class="section-title reveal">What I <span style="color: #0647d4;">Do</span></h2>
+
+            <div class="services-grid reveal">
+                <!-- Service 1 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Full-Stack Development</h3>
+                    <p>Building seamless, end-to-end web applications with modern technologies like React, Node.js, and
+                        Express.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>System Architecture</h3>
+                    <p>Designing scalable, secure, and highly available architectures tailored to enterprise-grade
+                        requirements.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h3>Responsive Design</h3>
+                    <p>Crafting stunning, mobile-first interfaces that look pixel-perfect and perform flawlessly on
+                        every device.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>Database Optimization</h3>
+                    <p>Structuring relational and non-relational databases to ensure lightning-fast queries and data
+                        integrity.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h3>SEO & Performance</h3>
+                    <p>Implementing advanced SEO techniques and optimizing web assets to achieve perfect Core Web Vital
+                        scores.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card glass-panel">
+                    <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>API Development</h3>
+                    <p>Developing secure RESTful and GraphQL APIs to power your web, mobile, or desktop applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" style="background-color: white;" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+
+            <div class="projects-grid reveal">
+                <!-- Project 1 -->
+                <div class="project-card glass-panel">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=800&auto=format&fit=crop"
+                            alt="Fast Food Website">
+                        <div class="project-links">
+                            <a href="https://fast-food-website-w8cf.vercel.app" target="_blank" title="Live Preview"><i
+                                    class="fa-solid fa-link"></i></a>
+                            <a href="#" title="Source Code"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Crave Fast Food Website</h3>
+                        <p>A highly responsive and visually appealing fast-food ordering website featuring a dynamic
+                            menu and modern UI elements.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://fast-food-website-w8cf.vercel.app" target="_blank" class="btn btn-primary"
+                            style="margin-top: 1.5rem; width: fit-content; padding: 0.5rem 1.2rem; font-size: 0.9rem;"><i
+                                class="fa-solid fa-eye" style="margin-right: 5px;"></i> Live Preview</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-panel">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=800&auto=format&fit=crop"
+                            alt="Weather Application">
+                        <div class="project-links">
+                            <a href="https://weather-app-two-rho-18.vercel.app/" target="_blank" title="Live Preview"><i
+                                    class="fa-solid fa-link"></i></a>
+                            <a href="#" title="Source Code"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Application</h3>
+                        <p>A sleek weather forecast application integrating live APIs to provide accurate real-time
+                            climate data for any city.
+                        </p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>API</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://weather-app-two-rho-18.vercel.app/" target="_blank" class="btn btn-primary"
+                            style="margin-top: 1.5rem; width: fit-content; padding: 0.5rem 1.2rem; font-size: 0.9rem;"><i
+                                class="fa-solid fa-eye" style="margin-right: 5px;"></i> Live Preview</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-panel">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop"
+                            alt="Social Media App">
+                        <div class="project-links">
+                            <a href="#" title="Live Preview"><i class="fa-solid fa-link"></i></a>
+                            <a href="#" title="Source Code"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ConnectHub Social App</h3>
+                        <p>Real-time social media application supporting direct messaging, post sharing, and live
+                            notifications.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>WebSockets</span>
+                        </div>
+                        <a href="#" class="btn btn-primary"
+                            style="margin-top: 1.5rem; width: fit-content; padding: 0.5rem 1.2rem; font-size: 0.9rem;"><i
+                                class="fa-solid fa-eye" style="margin-right: 5px;"></i> Live Preview</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;" class="reveal">
+                <a href="#" class="btn btn-outline">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get In <span>Touch</span></h2>
+
+            <div class="contact-container reveal">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>jamalkhan2844@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+92 3700917275</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Peshawar , Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form glass-panel" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn" class="btn btn-primary">Send Message</button>
+                    <p id="form-status"
+                        style="margin-top: 15px; font-weight: 500; display: none; text-align: center; font-size: 1.1rem;">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Jamal<span>.</span></h3>
+                    <p>Computer Engineer & Full-Stack Developer passionate about creating beautiful, functional digital
+                        solutions.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/jamalnasir2844/"><i class="fa-brands fa-github"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/muhammad-jamal-480139361?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/share/1HiAr2xLG4/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/jamalking2844?igsh=MXczeGNoOXFtcWV3cw=="><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">System Architecture</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">API Integration</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on my latest tech articles and projects!</p>
+                    <div style="display: flex; margin-top: 10px;">
+                        <input type="email" placeholder="Email Address"
+                            style="padding: 0.5rem; border: none; border-radius: 4px 0 0 4px; outline: none; width: 100%;">
+                        <button
+                            style="padding: 0.5rem 1rem; border: none; background: var(--accent-primary); color: white; border-radius: 0 4px 4px 0; cursor: pointer;">Go</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jamal - Computer Engineer | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Icon -->
+    <a href="https://wa.me/923700917275" target="_blank" class="whatsapp-float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
